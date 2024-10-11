@@ -5,17 +5,16 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    /* Ensures that when we set the height or width to an element, it will be applied to the entire element, including the border. */
+    box-sizing: border-box; /* Ensures that when we set the height or width to an element, it will be applied to the entire element, including the border. */
 }
 
 /* General styles */
 body {
     /* body minimum height of 100% of the viewport height. */
-    min-height: 100vh;
+    min-height: 100vh; /* vh = viewport height */
     /* ensures elements still show underneath each other */
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Flexbox container */
+    flex-direction: column;  /* Flexbox direction */
     /* Generic project styles */
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
@@ -23,7 +22,12 @@ body {
 
 /* Header */
 header {
-    background-color: lightcoral;
+    background-color: white; /* Background color of the header */
+    padding: 0 1rem; /* This will add padding to the left and right of the header */
+    position: fixed; /* Fixed position to keep the header at the top of the viewport */
+    z-index: 99;     /* Ensures the header is on top of other elements */
+    width: 100%;     /* Full width of the viewport, required as we set position: fixed */
+    box-shadow: 0 2px 2px #3a3a3a; /* Adds a shadow to the header to to indicate that it's layered on top of the other content.*/
 }
 
 /* Main content */
