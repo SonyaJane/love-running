@@ -52,5 +52,18 @@ h1 {
 header a {
     text-decoration: none; /* Removes underline from links */
     color: inherit; /* Inherits the color from the parent element */
-    
+}
+
+#menu {
+    font-size: 120%;
+    letter-spacing: 2px;
+    list-style-type: none; /* Removes the bullet points from the list */ 
+}
+
+#menu > li {
+    margin-bottom: 1rem; /* Adds margin to the bottom of each list item */
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
 }
