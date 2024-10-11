@@ -44,4 +44,13 @@ footer {
 
 h1 {
     font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Adds space between letters */
+    color: #252525;
+}
+
+header a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits the color from the parent element */
+    
 }
