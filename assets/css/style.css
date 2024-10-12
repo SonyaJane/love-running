@@ -41,11 +41,6 @@ main {
     margin-top: 47px; /* Push the main content down to avoid it being hidden by the header */
 }
 
-/* Footer */
-footer {
-    background-color: orange;
-}
-
 h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -95,7 +90,21 @@ nav {
 
 .nav-toggle-label {
     font-size: 2rem;
-}    
+}  
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
