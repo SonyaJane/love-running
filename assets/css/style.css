@@ -28,6 +28,9 @@ header {
     z-index: 99;     /* Ensures the header is on top of other elements */
     width: 100%;     /* Full width of the viewport, required as we set position: fixed */
     box-shadow: 0 2px 2px #3a3a3a; /* Adds a shadow to the header to to indicate that it's layered on top of the other content.*/
+    display: flex;   /* To get the checkbox with a label to show in the top right corner on the same lines as the logo */
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 /* Main content */
@@ -67,3 +70,28 @@ header a {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute; /* Takes an element outside the normal flow of the page structure. It is positioned relative to the nearest positioned ancestor in our case, the header. */
+    background-color: white;
+    width: 100%;
+    left: 0; /* push the nav element to the left of the screen */
+    padding: 0 1rem; /* Add some padding so the nav items line up nicely below "Love Running".*/
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none; /* Hide the nav element by default */
+    top: 100%; /* Push the nav element below the header */
+}
+
+#nav-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+/* Show the nav element when the checkbox is checked */
+#nav-toggle:checked ~ nav { 
+    display: block;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}    
