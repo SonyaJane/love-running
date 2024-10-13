@@ -42,7 +42,6 @@ header {
 
 /* Main content */
 main {
-    background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto; /* shorthand for flex-grow, flex-shrink, flex-basis */
     margin-top: 47px; /* Push the main content down to avoid it being hidden by the header */
@@ -115,6 +114,47 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }  
+
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#reasons h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 280%;
+}
+
+#benefits-physical > div, #benefits-mental > div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle-cover-bg {
+    background: url('../images/reasons-image.webp') no-repeat top center / cover;
+    width: 90vw;
+    height: 90vw;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
 
 #social-networks {
     text-align: center;
